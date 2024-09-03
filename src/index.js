@@ -1,7 +1,7 @@
 import express from  "express"
 import dotenv   from "dotenv";
 import dbConnect from "./db/db.js";
-const app = express();
+import  {app} from "./App.js" 
 dotenv.config();
 const port = process.env.PORT || 4000
 app.get("/",(req , res) => {
